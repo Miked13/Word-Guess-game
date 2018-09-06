@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HangMan Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid jumbotron_top">
+                    <div class="container border border-warning rounded">
+                        <h1 class="display-3">Hangman game</h1>
+                        <br>
+                        <h2 class="display-5 blink_me">Click the button to get started! </h2>
+                        <button type="button" id="startbutton" class="btn btn-warning">Start a New Game</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p id="guesswordText"></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="jumbotron jumbotron-fluid jumbotron-left">
+                <div class="container-fluid">
+                    <div id="soundeffectwin">
+                        <img id="Artwork1" src="assets/images/Viva La Vida Or Death And All His Friends.jpg" class="img-fluid img-thumbnail float-left rounded" alt="Responsive image">
+                        <audio controls id="audio1">
+                            <source src="assets/audio/Coldplay.mp3" type="audio/mp3">
+                        </audio>
+
+                        <img id="Artwork2" src="assets/images/The Colour and the Shape.jpg" class="img-fluid img-thumbnail float-left rounded" alt="Responsive image">
+                        <audio controls id="audio2">
+                            <source src="assets/audio/Foo Fighters.mp3" type="audio/mp3">
+                        </audio>
+
+                        <img id="Artwork3" src="assets/images/Le chemin.jpg" class="img-fluid img-thumbnail float-left rounded" alt="Responsive image">
+                        <audio controls id="audio3">
+                            <source src="assets/audio/Kyo.mp3" type="audio/mp3">
+                        </audio>
+
+                        <img id="Artwork4" src="assets/images/Discovery.jpg" class="img-fluid img-thumbnail float-left rounded" alt="Responsive image">
+                        <audio controls id="audio4">
+                            <source src="assets/audio/Daft Punk.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="container-fluid statistics">
+                <h3>Statistics</h3> <br>
+                <h4>Wins: <br>
+                    <div id="wins"></div>
+                </h4> <br>
+                <h4>Losses: <br>
+                    <div id="losses"></div>
+                    <div id="soundeffectloss">
+                        <audio controls id="wilhem">
+                            <source src="assets/audio/wilhem.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                </h4> <br>
+                <h4>Current word: <br>
+                    <div id="guessedWord">_ _ _ _ _ _</div> <!-- placeholder-->
+                </h4> <br>
+                <h4>Wrong letters
+                    <div id="wrongletters"></div>
+                </h4> <br>
+                <h4>Number of guesses remaining:
+                    <div id="guessesLeft"></div>
+                </h4> <br>
+                <h4>Letters already guessed: <br>
+                    <div id="guessedLetters"></div>
+                </h4>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+body{
+    background-image: url("../images/tavern.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+    height: 100%;
+    font-family: fantasy;
+}
+.jumbotron_top{
+    background: transparent;
+}
+
+.container{
+    border-style: dashed gold 2px;
+}
+.jumbotron-left{
+    background: transparent;
+}
+.statistics{
+    background: transparent;
+}
+
+h1{
+    color: gold;
+}
+
+.blink_me{
+    animation: blinker 2s linear infinite;
+    color: gold;
+}
+@keyframes blinker {
+    50% {opacity: 0;}
+}
+h3{
+    color: gold;
+}
+h4{
+    font-size: 20px;
+    color: gold;
+}
+#guesswordText{
+    font-size: 20px;
+    color: gold;
+}
+
+#Artwork1{
+    display: none;
+}
+#Artwork2{
+    display: none;
+}
+#Artwork3{
+    display: none;
+}
+#Artwork4{
+    display: none;
+}
+
+#audio1{
+    display: none;
+}
+#audio2{
+    display: none;
+}
+#audio3{
+    display: none;
+}
+#audio4{
+    display: none;
+}
+
+#soundeffectloss{
+    display: none;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
